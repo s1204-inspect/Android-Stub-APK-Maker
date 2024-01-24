@@ -10,7 +10,7 @@ android {
         applicationId 'com.android.vending'
         minSdk 8
         //noinspection ExpiredTargetSdkVersion
-        targetSdk 22
+        targetSdk 24
         //noinspection HighAppVersionCode
         versionCode 2147483647
     }
@@ -30,13 +30,13 @@ android {
             signingConfig signingConfigs.android
             minifyEnabled true
             shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles += 'proguard-rules.pro'
         }
         release {
             signingConfig signingConfigs.android
             minifyEnabled true
             shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles += 'proguard-rules.pro'
         }
     }
 
